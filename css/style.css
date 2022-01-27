@@ -100,12 +100,25 @@ h3 {
 
 #answerEl {
   font-weight: bold;
-  border: none;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) {
   .container {
     width: 90%;
+    height: 80vh;
+  }
+
+  .quote {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .btn {
+    font-size: 40px;
+  }
+
+  .jepBlock {
+    width: 300px;
+    font-size: 28px;
   }
 }
-
