@@ -22,7 +22,7 @@ body {
   background-color: #330ede;
   font-family: 'Roboto', sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -33,9 +33,10 @@ body {
 .container {
   background-color: #fff;
   max-width: 100%;
-  width: 50%;
+  width: 45%;
   height: auto;
   padding: 50px 20px;
+  margin: 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,6 +44,10 @@ body {
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px rgba(68, 68, 172, 0.2);
   overflow: auto;
+}
+
+.score {
+  width: 40%;
 }
 
 h3 {
@@ -94,7 +99,8 @@ h3 {
 }
 
 #cat,
-#answerEl {
+#answerEl,
+#total {
   color: #fff;
 }
 
@@ -102,26 +108,82 @@ h3 {
   font-weight: bold;
 }
 
+.btnCont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 25px 0px;
+  padding: 0px 20px;
+}
+
+.correct {
+  background-color: #5da71d;
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrong {
+  background-color: #ec2624;
+  color: #fff;
+  font-weight: bold;
+}
+
+.exCont {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.ex {
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ex:active {
+  transform: scale(0.98);
+}
+
+.score {
+  padding: 20px 20px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    flex-direction: column;
+  }
+
   .container {
     width: 90%;
     height: auto;
+    margin: 20px 0px;
   }
 
   .quote {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 60px;
     padding: 20px;
     margin: 20px;
   }
 
   .btn {
-    font-size: 50px;
+    font-size: 40px;
     margin: 25px;
   }
 
   .jepBlock {
-    width: 400px;
-    font-size: 35px;
+    width: 300px;
+    font-size: 30px;
+  }
+
+  .correct,
+  .wrong {
+    font-weight: normal;
+  }
+
+  .ex,
+  .arrow {
+    font-size: 30px;
   }
 }
