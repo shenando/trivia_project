@@ -5,7 +5,7 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Shenan Trivia</title>
+		<title>JService API</title>
 
 		<!-- external CSS link -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,6 +15,9 @@
 	</head>
 	<body>
 		<div class="container">
+			<div class="exCont">
+				<button class="ex" id="arrow"></button>
+			</div>
 
 			<div class="jepBlock">
 				<h2 id="cat"></h2>
@@ -35,6 +38,24 @@
 			<button class="btn" id="reveal">Reveal Answer</button>
 			<button class="btn" id="btn">New Random Question</button>
 		</div>
+
+		<div class="container score" id="score">
+			<div class="exCont">
+				<button class="ex" id="ex">X</button>
+			</div>
+
+			<div class="btnCont"> 
+				<button class="btn correct" id="correct">Correct</button>
+				<button class="btn wrong" id="wrong">Wrong</button>
+				<button class="btn" id="clear">Clear</button>
+			</div>
+
+			<div class="jepBlock">
+				<h2 id="total"></h2>
+			</div>
+		</div>
+
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
+
