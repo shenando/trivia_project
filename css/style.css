@@ -20,6 +20,10 @@ img {
 /*******************************************/
 body {
   background-color: #330ede;
+  background-image: url(/img/jeopardy_logo.jpeg);
+  background-repeat: repeat-y;
+  background-origin: border-box;
+  background-size: cover;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: row;
@@ -31,7 +35,8 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
   max-width: 100%;
   width: 45%;
   height: auto;
@@ -136,7 +141,8 @@ h3 {
 
 .ex {
   border: 0;
-  background-color: #fff;
+  background: none;
+  color: #fff;
   cursor: pointer;
   font-weight: bold;
 }
